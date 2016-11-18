@@ -2,6 +2,7 @@ build_settings:
 setup:
 test:
   php_loc:
+    directory: "system"
   php_mess_detector:
     - "cleancode"
     - "controversial"
