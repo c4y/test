@@ -8,5 +8,4 @@ test:
     - "design"
     - "naming"
     - "unusedcode"
-  php_code_sniffer:
 complete:
