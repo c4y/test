@@ -1,0 +1,32 @@
+<?php
+$arrParallaxAllOptions = array('ui_x'=>'x','ui_y'=>'y','ui_bg'=>'bg','ui_scale'=>'bg','ui_velocity'=>'velocity','ui_opacity'=>'opacity');
+$parallaxOptions = array();
+foreach($arrParallaxAllOptions as $k=>$v)
+{
+  if($this->$k != "") 
+  {
+	  $parallaxOptions[] = $v . ": '" . $this->$k . "'";
+  }
+  $strParams = "{" . implode(",", $parallaxOptions) . "}";
+}
+?>
+
+<div <?php if($this->setparallax): ?>data-uk-parallax="<?=$strParams;?>" <?php endif; ?>class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+
+  <?php if ($this->headline): ?>
+    <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+  <?php endif; ?>
+
+  <?php $this->block('content'); ?>
+  <?php $this->endblock(); ?>
+
+</div>
+
+<?php
+if($this->setparallax)
+{
+  //$GLOBALS["TL_CSS"]["simple-parallax"] = "system/modules/simple-parallax/assets/parallax.css|static";
+  $GLOBALS["TL_JAVASCRIPT"]["simple-parallax"] = "system/modules/simple-parallax/assets/uikit.min.js|static";
+  $GLOBALS["TL_JAVASCRIPT"]["simple-parallax-start"] = "system/modules/simple-parallax/assets/parallax.js|static";
+}
+?>

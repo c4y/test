@@ -1,0 +1,17 @@
+.parallax {
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.parallax-fixed-background {
+    /*background-attachment: fixed;*/
+}
+
+.mod_article.parallax {
+    margin-bottom: 0;
+}
+
+.parallax-ce {
+    position: relative;
+	left: 0!important;
+}
