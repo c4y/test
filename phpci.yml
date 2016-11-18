@@ -3,4 +3,9 @@ setup:
 test:
   php_loc:
   php_mess_detector:
+    - "cleancode"
+    - "controversial"
+    - "design"
+    - "naming"
+    - "unusedcode"
 complete:
