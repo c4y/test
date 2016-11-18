@@ -9,6 +9,4 @@ test:
     - "naming"
     - "unusedcode"
   php_code_sniffer:
-  codeception:
-  php_cpd:
 complete:
