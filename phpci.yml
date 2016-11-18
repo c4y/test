@@ -8,7 +8,7 @@ test:
     - "design"
     - "naming"
     - "unusedcode"
-    php_code_sniffer:
-    codeception:
-    php_cpd:
+  php_code_sniffer:
+  codeception:
+  php_cpd:
 complete:
