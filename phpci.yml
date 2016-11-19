@@ -1,12 +1,5 @@
 build_settings:
 setup:
 test:
-  php_mess_detector:
-    rules:
-      - "cleancode"
-      - "controversial"
-      - "design"
-      - "naming"
-      - "unusedcode"
-    path: 'system/modules/core'
+  php_loc:
 complete:
