@@ -2,9 +2,11 @@ build_settings:
 setup:
 test:
   php_mess_detector:
-    - "cleancode"
-    - "controversial"
-    - "design"
-    - "naming"
-    - "unusedcode"
+    rules:
+      - "cleancode"
+      - "controversial"
+      - "design"
+      - "naming"
+      - "unusedcode"
+    path: 'system/modules/core'
 complete:
